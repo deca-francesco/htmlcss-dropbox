@@ -6,12 +6,14 @@
     <title>Dropbox</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="">
+<body class="debug">
     <header class="d-flex align-items-center">
         <div class="left d-flex">
             <div class="logo d-flex align-items-center">
@@ -35,13 +37,36 @@
                 </ul>
             </div>
             <div class="get_started">
-                <a href="#">Inizia</a>
+                <button class="btn"><a href="#">Inizia</a></button>
             </div>
         </div>
         <!-- /.right -->
     </header>
     <main>
-
+        <section id="jumbo">
+            <div class="container-lg">
+                <h1>Tutto ciò che ti serve per il <br> lavoro, in un unico posto</h1>
+                <div class="row d-flex">
+                    <div class="col-4">
+                        <p>
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili 
+                            dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: 
+                            è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+                        </p>
+                        <button class="btn btn-lg"><a href="#">Inizia la tua prova gratuita</a></button>
+                        <div>Annulla in qualsiasi momento</div>
+                        <div class="down-arrow"><a href="#"><i class="fa-solid fa-arrow-down"></i></a></div>
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-8">
+                        <img src="./assets/img/jumbo.png" alt="Dropbox">
+                    </div>
+                    <!-- /.col-8 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
     </main>
     <footer>
 

@@ -13,12 +13,17 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --drop-primary: #0061ff;
     --drop-secondary: #b4d0e7;
     --drop-colored: #61082c;
     --drop-light: #ffffff;
     --drop-dark: #000000;
+    --drop-hovered: #003283;
 }
 
 /* #endregion common */
@@ -38,12 +43,12 @@ img {
 
 /* #region utilities */
 .container {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
 .container-lg {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -63,6 +68,73 @@ img {
     list-style: none;
 }
 
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--drop-primary);
+    border-style: none;
+    
+    a {
+        color: var(--drop-light);
+    }
+
+    &:hover {
+        background-color: var(--drop-hovered);
+    }
+
+}
+
+.btn-lg {
+    padding: 0.6rem 1rem;
+}
+
+/* columns */
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: 100%;
+}
 
 /* #endregion utilities */
 
@@ -75,10 +147,10 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    background-color: var(--drop-light);
 
     a {
-        text-decoration: none;
-        color: #000000;
+        color: var(--drop-dark);
         font-size: 0.8rem;
     }
 
@@ -108,20 +180,6 @@ header {
             padding-left: 1rem;
         }
 
-        .get_started {
-            padding: 0.2rem 0.8rem;
-            background-color: var(--drop-primary);
-            
-            a {
-                color: var(--drop-light);
-            }
-
-            &:hover {
-                background-color: #003283;
-            }
-
-        }
-
     }
 
 }
@@ -129,7 +187,34 @@ header {
 /* #endregion header */
 
 /* #region main */
+main {
 
+    section#jumbo {
+        background-color: var(--drop-secondary);
+        padding-top: 3rem;
+        
+        .container-lg {
+            margin-bottom: -5rem;
+        }
+    
+        h1 {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+    
+        .col-4 button {
+            margin: 2rem 0;
+        }
+        
+        .col-4 .down-arrow>a>i {
+            margin: 7rem 0 0 0.6rem;
+            transform: scale(3);
+            color: var(--drop-dark);
+        }
+    
+    }
+
+}
 
 /* #endregion main */
 
