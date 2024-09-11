@@ -1,0 +1,41 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --drop-primary: #0061ff;
+    --drop-secondary: #b4d0e7;
+    --drop-colored: #61082c;
+    --drop-light: #ffffff;
+    --drop-dark: #000000;
+}
+
+/* #endregion common */
+
+/* #region debug */
+
+
+/* #endregion debug */
+
+
+/* #region header */
+
+
+/* #endregion header */
+
+/* #region main */
+
+
+/* #endregion main */
+
+/* #region footer */
+
+
+/* #endregion footer */
