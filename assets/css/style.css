@@ -19,12 +19,17 @@ a {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3 {
     font-size: 1.5rem;
 }
+
+h4 {
+    font-size: 1.2rem;
+}
+
 
 :root {
     --drop-primary: #0061ff;
@@ -264,6 +269,7 @@ main {
             font-size: 0.9rem;
             border: 1px solid var(--drop-border-lighter);
             height: 100%;
+            padding-bottom: 2rem;
 
             .card_top {
                 text-align: center;
@@ -349,6 +355,12 @@ main {
 
             .col-8 {
                 padding-left: 3rem;
+
+                .price {
+                    padding-top: 1rem;
+                    padding-bottom: 3rem;
+                    font-weight: bold;
+                }
             }
 
             div.btn {
@@ -364,7 +376,7 @@ main {
 
         .col-4 {
             
-            h2 {
+            h3 {
                 padding: 3rem 0 1rem;
             }
 
@@ -379,9 +391,69 @@ main {
 
     section#operations {
         h4 {
-            font-size: 1.2rem;
             padding-bottom: 2rem;
         }
+    }
+
+    section#teams {
+        
+        .container {
+
+            padding: 6rem 0 8rem;
+
+            h2 {
+                margin-bottom: 3rem;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        .teams_logos {
+
+            .logos_left, .logo_center, .logos_right {
+                width: calc(100% / 3);
+            }
+
+            .logos_square {
+                width: 50%;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 50%;
+                    filter: invert(1);
+                }
+            }
+
+            .logos_left {
+                flex-wrap: wrap;
+
+                
+                .first_logo {
+                    background-color: #a2d39b;
+                    border: 15px solid #d1e9cd;
+                }
+
+                .second_logo {
+                    background-color: #61082b;
+                }
+
+                .third_logo {
+                    background-color: #0093ce;
+                }
+
+                .fourth_logo {
+                    background-color: #ff1c1c;
+                }
+
+            }
+
+        }
+
     }
 
 }
