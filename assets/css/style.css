@@ -84,6 +84,7 @@ a {
     background-color: var(--drop-primary);
     border-style: none;
     color: var(--drop-light);
+    text-align: center;
 
     a {
         color: var(--drop-light);
@@ -234,18 +235,83 @@ main {
 
     section#plans {
 
+        h2 {
+            font-size: 2.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .radio_buttons label {
+            margin-right: 3rem;
+            margin-left: 0.2rem;
+        }
+
         .row {
             align-items: stretch;
+            padding-top: 1rem;
         }
 
         .card {
+            font-size: 0.9rem;
+            border: 1px solid #ededed;
             
-            ul {
-                margin-left: 1.4rem;
+            .card_top {
+                text-align: center;
+                border-top: 2px solid lightgrey;
+                border-bottom: 2px solid lightgrey;
+                padding: 0.5rem 0;
             }
 
-            ul .fa-li i {
-                color: var(--drop-primary);
+            .card_middle {
+                
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                .payment_period {
+                    font-size: 0.7rem;
+                    margin-bottom: 2rem;
+                }
+
+                .card_left {
+                    width: 1.5rem;
+                }
+
+                & i {
+                    padding-right: 0.5rem;
+                }
+
+                .btn {
+                    margin: 1rem 0;
+                }
+                
+                .or_else a {
+                    text-decoration: underline;
+                }
+
+            }
+
+            .card_middle, .card_bottom {
+                padding: 1rem 2rem;
+
+                & div {
+                    padding-top: 0.5rem;
+                }
+            }
+            
+            .card_bottom {
+
+                ul {
+                    margin-left: 1.3rem;
+                }
+    
+                ul .fa-li i {
+                    color: var(--drop-primary);
+                }   
+    
+                ul.fa-ul li {
+                    padding-top: 1rem;
+                }
+
             }
 
         }
