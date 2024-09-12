@@ -29,6 +29,8 @@ h3 {
     --drop-light: #ffffff;
     --drop-dark: #000000;
     --drop-hovered: #003283;
+    --drop-border-light: lightgrey;
+    --drop-border-lighter: #ededed;
 }
 
 /* #endregion common */
@@ -256,18 +258,18 @@ main {
 
         .card {
             font-size: 0.9rem;
-            border: 1px solid #ededed;
+            border: 1px solid var(--drop-border-lighter);
             height: 100%;
 
             .card_top {
                 text-align: center;
-                border-top: 2px solid lightgrey;
-                border-bottom: 2px solid lightgrey;
+                border-top: 1px solid var(--drop-border-light);
+                border-bottom: 2px solid var(--drop-border-light);
                 padding: 0.5rem 0;
             }
 
             .card_middle {
-                
+                height: 40%;
 
                 .price {
                     font-weight: bold;
@@ -286,13 +288,7 @@ main {
                     padding-right: 0.5rem;
                 }
 
-                .btn {
-                    margin: 1rem 0;
-                }
                 
-                .or_else a {
-                    text-decoration: underline;
-                }
 
             }
 
@@ -316,6 +312,27 @@ main {
     
                 ul.fa-ul li {
                     padding-top: 1rem;
+                }
+
+                .btn {
+                    margin: 1rem 0;
+                }
+                
+                .or_else {
+                    padding-bottom: 2rem;
+
+                    a {
+                        text-decoration: underline;
+                        
+                    }
+                }
+
+                .spacer {
+                    height: 2px;
+                    width: 3rem;
+                    padding: 0;
+                    margin-bottom: 2rem;
+                    background-color: var(--drop-border-light);
                 }
 
             }
