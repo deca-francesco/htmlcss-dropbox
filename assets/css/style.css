@@ -528,6 +528,50 @@ main {
         }
     }
 
+    section#faq {
+        padding-top: 5rem;
+
+        h2 {
+            padding-bottom: 2rem;
+        }
+
+        .q_and_a {
+            border-top: 2px solid var(--drop-border-light);
+
+            p {
+                display: none;
+            }
+        }
+
+        .q_and_a:last-child {
+            border-bottom: 2px solid var(--drop-border-light);
+        }
+
+        .q_and_a:hover .answer {
+            display: block;
+        }
+
+        .q_and_a:hover i {
+            transform: rotate(180deg);
+        }
+
+        .q_and_a:hover p {
+            display: block;
+        }
+
+        .question {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+
+            span {
+                font-weight: bold;
+            }
+        }
+            
+        
+    }
+
 }
 
 /* #endregion main */
