@@ -412,7 +412,7 @@ main {
 
         .teams_logos {
 
-            .logos_left, .logo_center, .logos_right {
+            .logos_left, .logos_center, .logos_right {
                 width: calc(100% / 3);
             }
 
@@ -432,7 +432,7 @@ main {
             .logos_left {
                 flex-wrap: wrap;
 
-                
+
                 .first_logo {
                     background-color: #a2d39b;
                     border: 15px solid #d1e9cd;
@@ -450,6 +450,42 @@ main {
                     background-color: #ff1c1c;
                 }
 
+            }
+
+            .logos_center {
+                background-color: #f5f5f5;
+                padding: 3rem;
+
+                img {
+                    width: 50%;
+                    padding-bottom: 4rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    padding-bottom: 3rem;
+                }
+
+            }
+            
+            .logos_right {
+                flex-wrap: wrap;
+
+                .first_logo {
+                    background-color: #d5001f;
+                }
+
+                .second_logo {
+                    background-color: #b4d0e7;
+                }
+
+                .third_logo {
+                    background-color: #0d2481;
+                }
+
+                .fourth_logo {
+                    background-color: #ffd830;
+                }
             }
 
         }
