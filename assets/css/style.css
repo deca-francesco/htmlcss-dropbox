@@ -356,6 +356,23 @@ main {
 
     }
 
+    section#partners {
+
+        .col-4 {
+            
+            h3 {
+                padding: 3rem 0 1rem;
+            }
+
+            button {
+                margin-top: 2rem;
+                border-style: inset;
+                background-color: var(--drop-light);
+            }
+        }
+
+    }
+
 }
 
 /* #endregion main */
