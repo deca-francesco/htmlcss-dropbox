@@ -7,6 +7,7 @@
 
 body {
     font-family: Poppins;
+    min-width: 1440px;
 }
 
 img {
@@ -54,6 +55,16 @@ a {
 
 .d-flex {
     display: flex;
+}
+
+.row {
+    display: flex;
+    margin: 0 -1rem;
+    flex-wrap: wrap;
+}
+
+[class^="col-"] {
+    padding: 1rem;
 }
 
 .align-items-center {
@@ -189,12 +200,18 @@ header {
 /* #region main */
 main {
 
+    section {
+        padding: 2rem 0;
+    }
+
     section#jumbo {
         background-color: var(--drop-secondary);
         padding-top: 3rem;
-        
+        margin-bottom: 6rem;
+
+
         .container-lg {
-            margin-bottom: -5rem;
+            margin-bottom: -8rem;
         }
     
         h1 {
@@ -207,11 +224,27 @@ main {
         }
         
         .col-4 .down-arrow>a>i {
-            margin: 7rem 0 0 0.6rem;
+            margin: 20% 3%;
             transform: scale(3);
             color: var(--drop-dark);
         }
     
+    }
+
+    section#plans {
+
+        .row {
+            align-items: stretch;
+        }
+
+        .card {
+            
+            & ul li::before {
+                content: "<span class="fa-li"><i class="fa-solid fa-check-square"></i></span>";
+            }
+
+        }
+
     }
 
 }
