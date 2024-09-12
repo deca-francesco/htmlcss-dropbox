@@ -83,7 +83,8 @@ a {
     padding: 0.5rem 1rem;
     background-color: var(--drop-primary);
     border-style: none;
-    
+    color: var(--drop-light);
+
     a {
         color: var(--drop-light);
     }
@@ -239,8 +240,12 @@ main {
 
         .card {
             
-            & ul li::before {
-                content: "<span class="fa-li"><i class="fa-solid fa-check-square"></i></span>";
+            ul {
+                margin-left: 1.4rem;
+            }
+
+            ul .fa-li i {
+                color: var(--drop-primary);
             }
 
         }
