@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 :root {
     --drop-primary: #0061ff;
     --drop-secondary: #b4d0e7;
@@ -161,6 +165,7 @@ header {
     width: 100%;
     z-index: 1000;
     background-color: var(--drop-light);
+    box-shadow: 0 2px 2px grey;
 
     a {
         color: var(--drop-dark);
@@ -246,14 +251,14 @@ main {
         }
 
         .row {
-            align-items: stretch;
             padding-top: 1rem;
         }
 
         .card {
             font-size: 0.9rem;
             border: 1px solid #ededed;
-            
+            height: 100%;
+
             .card_top {
                 text-align: center;
                 border-top: 2px solid lightgrey;
@@ -263,8 +268,9 @@ main {
 
             .card_middle {
                 
-                h3 {
-                    font-size: 1.5rem;
+
+                .price {
+                    font-weight: bold;
                 }
 
                 .payment_period {
@@ -313,6 +319,21 @@ main {
                 }
 
             }
+
+        }
+
+
+
+        #sell_office {
+
+            .col-8 {
+                padding-left: 3rem;
+            }
+
+            div.btn {
+                margin: 0 2.2rem;           
+            }
+
 
         }
 
