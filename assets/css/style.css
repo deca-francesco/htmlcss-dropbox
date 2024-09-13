@@ -8,6 +8,7 @@
 body {
     font-family: Poppins;
     min-width: 1440px;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -237,8 +238,9 @@ main {
             padding-bottom: 2rem;
         }
     
-        .col-4 button {
+        .col-4 .btn {
             margin: 2rem 0;
+            width: 60%;
         }
         
         .col-4 .down-arrow>a>i {
@@ -530,6 +532,7 @@ main {
 
     section#faq {
         padding-top: 5rem;
+        min-height: 35rem;
 
         h2 {
             padding-bottom: 2rem;
